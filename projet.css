@@ -1,0 +1,63 @@
+<head>
+ <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <nav> 
+ <ul> 
+ <li><a href="#">Accueil</a></li> <li><a href="#">À propos</a></li>
+  <li><a href="#">Portfolio</a></li>
+   <li><a href="#">Contact</a></li>
+    </ul> 
+    </nav>
+    nav ul {
+         list-style: none; 
+         padding: 0;
+          margin: 0; display: flex; /* Affichage en ligne */
+           justify-content: center; /* Centrer le menu */
+            background-color: #333;
+         }
+          nav li {
+             margin: 10px;
+             } 
+             nav a {
+                 text-decoration: none;
+                  color: white;
+                   padding: 10px 15px;
+                    display: inline-block;
+                 }
+                  nav a:hover { 
+                    background-color: #555;
+                 }
+
+                 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+                  body { 
+                    font-family: 'Roboto', sans-serif;
+                 }
+                  <header class="portfolio-header">
+                   <h1>Bienvenue sur mon portfolio</h1>
+                    </header>
+                     <section class="portfolio-content"> 
+                     <p>Découvrez mes projets et compétences.</p> 
+                     </section>
+                     portfolio-header {
+                         text-align: center;
+                          background-color: #444; 
+                          color: white;
+                           padding: 20px; 
+                        } 
+                        .portfolio-content { 
+                            text-align: center;
+                             margin: 20px;
+                             }
+                             body { 
+                                background-color: #f4f4f4;
+                             } 
+                             a { 
+                                transition: background-color 0.3s ease; 
+                            }
+                             .portfolio-header { 
+                                border-radius: 10px;
+                             }
+
+
+
+
