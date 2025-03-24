@@ -1,0 +1,115 @@
+* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* En-tête */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section Produits */
+#produits {
+    padding: 20px;
+    background: white;
+}
+
+#produits h2 {
+    margin-bottom: 20px;
+}
+
+.produits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produit {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.produit img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produit h3 {
+    margin: 10px 0;
+}
+
+.produit p {
+    font-size: 14px;
+    color: #666;
+}
+
+.produit button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.produit button:hover {
+    background: #555;
+}
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .produits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produit {
+        width: 90%;
+    }
+}
