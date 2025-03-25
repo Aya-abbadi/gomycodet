@@ -1,0 +1,22 @@
+Algorithme SommeDistincte
+  Entrée : Deux ensembles Set1 et Set2
+  Sortie : La somme des éléments distincts
+
+  Début
+    sum ← 0
+    
+    Pour chaque élément dans Set1 faire
+      Si l'élément n'est pas dans Set2 alors
+        sum ← sum + élément
+      Fin Si
+    Fin Pour
+
+    
+    Pour chaque élément dans Set2 faire
+      Si l'élément n'est pas dans Set1 alors
+        sum ← sum + élément
+      Fin Si
+    Fin Pour
+
+    Retourner sum
+  Fin
