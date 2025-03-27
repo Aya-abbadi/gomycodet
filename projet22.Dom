@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changeur de Couleurs</title>
+  <style>
+    /* Style CSS intégré */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: -50px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    #color-box {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      background-color: #cccccc;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+
+    #change-color-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #change-color-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Structure HTML -->
+  <div class="container">
+    <h1>Color Changer</h1>
+    <div id="color-box"></div>
+    <button id="change-color-btn">Change Color</button>
+  </div>
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      const colorBox = document.getElementById("color-box");
+      const changeColorBtn = document.getElementById("change-color-btn");
+
+      
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      
+      changeColorBtn.addEventListener("click", () => {
+        const newColor = getRandomColor();
+        colorBox.style.backgroundColor = newColor;
+      });
+    });
+  </script>
+</body>
+</html>
